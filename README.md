@@ -13,3 +13,17 @@ g++ -o v4l2_test v4l2_test.cpp `pkg-config --cflags --libs opencv4`
 
 # Camera Application
 V4L2를 통해 받은 카메라 신호를 Qt5 GUI로 시각화.
+
+### 빌드
+```
+$ cd ~/dev_ws/project_V4L2
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+```
+
+### 실행
+```
+./helloworld
+```
