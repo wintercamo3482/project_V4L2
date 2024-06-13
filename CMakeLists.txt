@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.1.0)
 
-project(helloworld VERSION 1.0.0 LANGUAGES CXX)
+project(v4l2_cam VERSION 1.0.0 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -15,15 +15,13 @@ endif()
 
 find_package(Qt5 COMPONENTS Widgets REQUIRED)
 
-# UI file directory
-set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOUIC_SEARCH_PATHS "${CMAKE_SOURCE_DIR}/ui")
 
-add_executable(helloworld
-    ui/mainwidget.ui
-    src/mainwidget.cpp
-    src/mainwidget.h
+add_executable(v4l2_cam
+    ui/widget.ui
+    src/widget.cpp
+    src/widget.h
     src/main.cpp
 )
 
-target_link_libraries(helloworld Qt5::Widgets)
+target_link_libraries(v4l2_cam Qt5::Widgets)

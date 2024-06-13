@@ -17,13 +17,13 @@ V4L2를 통해 받은 카메라 신호를 Qt5 GUI로 시각화.
 ### 빌드
 ```
 $ cd ~/dev_ws/project_V4L2
-$ mkdir build
-$ cd build
-$ cmake ..
-$ make
+$ chmod +x qtbuild.sh
+$ ./qtbuild.sh
 ```
 
 ### 실행
 ```
-./helloworld
+$ cd ~/dev_ws/project_V4L2
+$ chmod +x qtrun.sh
+$ ./qtrun.sh
 ```
