@@ -2,9 +2,9 @@
 #define WIDGET_H
 
 #include <QWidget>
-#include <QFileDialog>
+#include <QPixmap>
+// #include <QFileDialog>
 // #include <QLabel>
-// #include <QPixmap>
 
 namespace Ui
 {
@@ -21,6 +21,7 @@ public:
 
 private:
     Ui::Widget *ui; // 윈도우상에 배치한 위젯에 접근하기 위한 오브젝트
+    // label_pic;
 
 public slots:
     void btn_fileOpen_clicked();

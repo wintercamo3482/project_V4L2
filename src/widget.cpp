@@ -8,6 +8,12 @@ Widget::Widget(QWidget *parent) :
     ui->setupUi(this);
     setWindowTitle("카메라 어플리케이션");
 
+    QPixmap pix("/home/ubuntu2004/dev_ws/project_V4L2/res/Lenna.png");
+
+    int w = ui->label_display->width ();
+    int h = ui->label_display->height ();
+    ui->label_display->setPixmap(pix.scaled(w, h, Qt::KeepAspectRatio));
+
     ui->btn_fileOpen->setText("파일 열기");
     ui->btn_startCam->setText("웹캠 시작");
     ui->btn_stopCam->setText("웹캠 종료");
@@ -25,7 +31,7 @@ Widget::~Widget()
 void Widget::btn_fileOpen_clicked()
 {
     qDebug("open clicked");
-    Qfile file_path = QFileDialog::getOpenFileName(this, )
+    // Qstring file_path = QFileDialog::getOpenFileName(this, )
 }
 
 void Widget::btn_startCam_clicked()
