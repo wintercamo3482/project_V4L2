@@ -22,6 +22,8 @@ add_executable(v4l2_cam
     src/widget.cpp
     src/widget.h
     src/main.cpp
+    src/YUVDecoder.h
+    src/YUVDecoder.cpp
 )
 
 target_link_libraries(v4l2_cam Qt5::Widgets)
